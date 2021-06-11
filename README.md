@@ -4,9 +4,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-### Live  `Visit Live Demo [finance link](https://hoxton.herokuapp.com/)`
+### Live  
+Visit Live Demo [finance link](https://hoxton.herokuapp.com/)
 
-### Step1 `Copy the following link and take clone of the github repo`
+
+### Step1 
+`Copy the following link and take clone of the github repo`
 
 
 ```
