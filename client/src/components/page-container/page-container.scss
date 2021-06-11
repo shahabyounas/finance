@@ -1,0 +1,11 @@
+.page-container {
+    &__body {
+        max-width: 1200px;
+        padding: 1.25rem 1.5rem;
+        padding-bottom: 3rem;
+    }
+
+    &__header {
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,31 @@
+.svg-icons {
+
+    &__arrow-down {
+        fill:#fff;
+        fill-rule:evenodd
+    }
+
+    &__logo-text {
+        fill:#efefef;
+        font-size:39px;
+        font-family:HelveticaNeue-CondensedBlack, Helvetica Neue;
+        font-weight:normal;
+    }
+
+    &__logo {
+        fill: #fff;
+    }
+
+    &__right-open {
+        fill: #fff;
+    }
+
+    &__online {
+        fill: #7fcc6d;
+    }
+}
+
+.a{fill:#efefef;font-size:16px;font-family:HelveticaNeue-Light, Helvetica Neue;}
+.b,.e{fill:#fff;}
+.c,.d{fill:none;stroke:#fff;stroke-linejoin:round;stroke-width:1.7px; }
+.d{stroke-linecap:round;}.e{fill-rule:evenodd; } 

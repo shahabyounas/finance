@@ -1,0 +1,95 @@
+$border-color: #D9D9D9;
+
+.home {
+
+    &__block {
+        flex: 0 0 50%;
+        align-self: start;
+    }
+
+    &__health {
+        align-self: flex-start;
+    }
+
+    &__performance {
+        margin-top: 3rem;
+    }
+
+    &__newsfeed {
+        margin-top: 3rem;
+    }
+
+    &__news {
+        border: 1px solid $border-color;
+        border-radius: 8px;
+        padding: .5rem 1.5rem;
+        max-height: 70vh;
+        overflow: auto;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    &__card {
+        box-shadow: 0px 0px 20px #0B0B0B24;
+        border-radius: 6px;
+        padding: 2rem 1.2rem;
+        margin-top: 1rem;
+        margin-right: 1rem;
+        min-width: 6rem;
+        max-height: 3rem;
+
+        &:first-child {
+            min-width: 18rem;
+            padding: 2rem 1rem;
+        }
+    }
+
+    &__goal {
+        border: 1px solid $border-color;
+        padding: 1.5rem 2rem;
+        width: 160px;
+        height: 230px;
+        margin-right: 1rem;
+        background-color: white;
+        box-shadow: 0 0 40px #0B0B0B24;
+
+    }
+
+    &__circle {
+        border: 1px solid #7fcc6d;
+        width: 140px;
+        height: 140px;
+        border-radius: 100%;
+    }
+
+    &__prices {
+        margin: 0 -2rem;
+        margin-top: 2.3rem;
+        padding-top: 0.5rem;
+        border-top: 1px solid $border-color;
+        justify-content: space-between;
+    }
+
+    &__mid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    &__block-half {
+        flex: 0 0 50%;
+
+    }
+
+    &__comment {
+       align-items: flex-start; 
+    }
+
+    &__description {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,85 @@
+$nav-bar-width: 18%;
+
+.layout {
+    display: flex;
+
+    &__body {
+        display: flex;
+
+    }
+
+    &__navbar {
+        font-family:HelveticaNeue-Light, Helvetica Neue;
+        min-width: $nav-bar-width;
+        max-width: $nav-bar-width;
+        height: 100%;
+        background-image: url('../../assets/home-bg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 55%;
+        color: white;
+        position: fixed;
+    }
+
+    &__bg-layer {
+        background-color: rgba(1, 53, 19, .98);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: $nav-bar-width;
+        min-width:$nav-bar-width;
+        height: 100%;
+        opacity: 1;
+      }
+
+      &__nav {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &__logo {
+          margin-top: 1em;
+          align-self: center;
+      }
+
+      &__list {
+          margin-top: 4rem;
+      }
+
+      &__item {
+          list-style-type: none;
+          display: flex;
+          justify-content: flex-start;
+          padding: 1rem;
+          margin-top: .8rem;
+          width: 10rem;
+          border-radius: 8px;
+          cursor: pointer;
+          text-transform: capitalize;
+          
+          &--selected {
+              background-color: rgb(28, 73, 43);;
+          }
+
+          &--arrow {
+              align-self: flex-end;
+              margin-left: auto;
+          }
+      }
+
+      &__content {
+        height: 100vh;
+        position: fixed;
+        margin-left: $nav-bar-width;
+        width: 80%;
+        overflow-x: scroll;;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+    }
+
+
+
+}

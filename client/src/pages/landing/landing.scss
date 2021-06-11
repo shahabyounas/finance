@@ -1,0 +1,177 @@
+$grey100: #B2B2B2;
+$grey200: #ECECEC;
+
+.landing {
+
+  &__page {
+    height: 100vh;
+    width: 100%;
+    background: url('../../assets/home-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+    position: relative;
+
+    &-slideUp {
+      animation: slideUp 1s ease-out forwards;
+    }
+
+    &-slideLeft {
+      animation: slideLeft 1s ease-out forwards;
+    }
+  }
+
+
+  &__layer {
+    background-color: rgba(2, 54, 20, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
+
+  &__header {
+      font-size: 70px;
+  }
+
+  &__container {
+    position: absolute;
+    top: 40%;
+    left: 32.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+  }
+
+  &__description {
+      color: $grey100;
+      width: 530px;
+      text-align: center;
+  }
+
+  &__button {
+      background: transparent;
+      padding: 0.6rem 1.8rem;
+      margin: 1rem;
+      border: 1px solid $grey200;
+      color: $grey200;
+      border-radius: 5px;
+      font-size: .9rem;
+      border-color: $grey100;
+      border-bottom-color: white;
+      cursor: pointer;
+  }
+
+  &__text-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+  }
+
+  &__display {
+    opacity: 1;
+  }
+
+  &__logo {
+    position: absolute;
+    animation: logo 0.7s ease-out forwards;
+  }
+
+  &__arrow-down, &__line {
+    position: absolute;
+    left: 50%;
+    top: 90%;
+  }
+
+  &__arrow-down:hover {
+    cursor: pointer;
+  }
+
+  &__line {
+    top: 50%;
+    height: 5px;
+    background: #fff;
+    border-radius: 5px;
+    animation: 
+    startLine .3s ease-out forwards,
+    HzLine .5s ease-out 0.3s forwards, 
+    fullHeight 0.4s ease-out .8s forwards ;
+  }
+
+  &__switch {
+    opacity: 0;
+  }
+
+}
+
+.text-color {
+    color: white;
+}
+@keyframes lineInserted {
+  from {
+    height: 10px;
+  }
+  to {
+    height:300px; 
+  }
+}
+
+@keyframes logo {
+
+  0% {
+    top: 0%;
+  }
+
+  100% {
+    top: -20%;
+  }
+}
+
+@keyframes slideUp {
+
+  0% {
+    background-position: 50% 30%;
+  }
+
+  100% {
+    background-position: 50% 50%;
+  }
+
+}
+
+@keyframes slideLeft {
+
+  0% {
+    background-position: 50% 50%;
+  }
+
+  100% {
+    background-position: -300px 50%;
+  }
+
+}
+
+@keyframes startLine {
+  100% {
+    width: 20px;
+  }
+}
+
+@keyframes HzLine {
+  100% {
+      left: 18%;
+      width: 80%;
+  }
+}
+
+@keyframes fullHeight {
+
+  100% {
+    top: 0;
+    height: 100%;
+  }
+}
