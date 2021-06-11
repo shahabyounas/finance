@@ -4,7 +4,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-## Step1 `Copy the following link and take clone of the github repo`
+### Live  `Visit Live Demo [finance link](https://hoxton.herokuapp.com/)`
+
+### Step1 `Copy the following link and take clone of the github repo`
 
 
 ```
@@ -15,12 +17,11 @@ git clone https://github.com/shahabyounas/finance.git
 # Install Dependencies in root and /client folders
 
 ```
- npm install
+ cd finance and npm install
  
- cd client 
+ cd client and npm install
  
- npm install
- 
+ Inside client folder:
  npm start
 
 ```
