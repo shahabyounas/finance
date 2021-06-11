@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-# Step1 `Copy the following link and take clone of the github repo`
+## Step1 `Copy the following link and take clone of the github repo`
 
 
 ```
