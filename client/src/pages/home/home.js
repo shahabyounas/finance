@@ -67,6 +67,10 @@ const Home = () => {
         }
     }
 
+    const Button = ({  className, label }) => (
+        <button className={`home__button ${className}`}> {label} </button>
+    )
+
     const Stats = () => (
         <div className="home__block">
             <strong> Quick Stats </strong>
@@ -84,7 +88,7 @@ const Home = () => {
 
     const Finance = () => (
         <div className="home__block">
-            <div className={animate('fadeInUp')}> <strong>  My financial Health </strong></div>
+            <div className={`flex-row content-between ${animate('fadeInUp')}`}> <strong className="ml-1">  My financial Health </strong>  <Button className="mx-1" label="View financial Health" />  </div>
             <div className="home__card" style={{ minHeight: '2.6rem' }}>
                 <div className="mt-0"> <ProgressBar /> </div>
                 <div className="flex-row content-between" style={{ fontWeight: 'bold' }}>
@@ -124,7 +128,7 @@ const Home = () => {
 
     const renderGoals = () => (
         <div className="home__block home__goals">
-            <div> <strong> My Goals </strong> </div>
+            <div className="flex-row content-between"> <strong> My Goals </strong>  <Button className="mx-3" label="View all Goals" /> </div>
             <div className="flex-row mt-1">{[3, 4, 4].map((g, index) => <GoalCard key={index.toString()} />)}</div>
         </div>
     )
