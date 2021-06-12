@@ -1,17 +1,12 @@
 $nav-bar-width: 18%;
 
 .layout {
-    display: flex;
 
-    &__body {
-        display: flex;
-
-    }
 
     &__navbar {
         font-family:HelveticaNeue-Light, Helvetica Neue;
         min-width: $nav-bar-width;
-        max-width: $nav-bar-width;
+        // max-width: $nav-bar-width;
         height: 100%;
         background-image: url('../../assets/home-bg.png');
         background-size: cover;
@@ -26,7 +21,7 @@ $nav-bar-width: 18%;
         position: fixed;
         top: 0;
         left: 0;
-        width: $nav-bar-width;
+        // width: $nav-bar-width;
         min-width:$nav-bar-width;
         height: 100%;
         opacity: 1;
@@ -68,11 +63,14 @@ $nav-bar-width: 18%;
       }
 
       &__content {
-        height: 100vh;
-        position: fixed;
+        transform: scale(.81);
+        transform-origin: 0% 0% 0px;
         margin-left: $nav-bar-width;
-        width: 80%;
-        overflow-x: scroll;;
+        width: 100%;
+        overflow-y: auto;
+        height: 122vh;
+
+
 
         &::-webkit-scrollbar {
             display: none;

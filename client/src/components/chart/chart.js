@@ -25,7 +25,7 @@ const Chart = ({ d = [], a = [] , width = '400px', height = '300px' }) => {
   )
  
   return (
-    <div style={{ width, height }}>
+    <div style={{ width, height, marginLeft: '2rem', transform: 'scale(1.08)' }}>
       <ReactChart data={data} axes={axes} />
     </div>
   )

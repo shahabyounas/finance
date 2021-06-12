@@ -3,8 +3,7 @@ $border-color: #D9D9D9;
 .home {
 
     &__block {
-        flex: 0 0 50%;
-        align-self: start;
+        flex-grow: 1;
     }
 
     &__health {
@@ -13,6 +12,7 @@ $border-color: #D9D9D9;
 
     &__performance {
         margin-top: 3rem;
+        display: flex;
     }
 
     &__newsfeed {
@@ -34,13 +34,14 @@ $border-color: #D9D9D9;
     &__card {
         box-shadow: 0px 0px 20px #0B0B0B24;
         border-radius: 6px;
-        padding: 2rem 1.2rem;
+        padding: 2rem 1.3rem;
+        margin: 0 .725rem;
         margin-top: 1rem;
-        margin-right: 1rem;
         min-width: 6rem;
         max-height: 3rem;
 
         &:first-child {
+            margin-left: 0;
             min-width: 18rem;
             padding: 2rem 1rem;
         }
@@ -55,6 +56,10 @@ $border-color: #D9D9D9;
         background-color: white;
         box-shadow: 0 0 40px #0B0B0B24;
 
+    }
+
+    &__goals {
+        margin-left: -1rem;
     }
 
     &__circle {
@@ -81,7 +86,7 @@ $border-color: #D9D9D9;
 
 
     &__block-half {
-        flex: 0 0 50%;
+        flex: 0 0 40%;
 
     }
 

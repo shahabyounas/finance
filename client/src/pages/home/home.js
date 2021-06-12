@@ -13,7 +13,7 @@ const Home = () => {
     const [comments, setComments] = useState([]);
     const [posts, setPosts] = useState([]);
     const [users, setUsers] = useState([]);
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(false);
 
     useEffect(() => {
 
@@ -83,9 +83,9 @@ const Home = () => {
     )
 
     const Finance = () => (
-        <div className="home__block ml-1">
+        <div className="home__block">
             <div className={animate('fadeInUp')}> <strong>  My financial Health </strong></div>
-            <div className="home__card" style={{ minHeight: '2.7rem' }}>
+            <div className="home__card" style={{ minHeight: '2.6rem' }}>
                 <div className="mt-0"> <ProgressBar /> </div>
                 <div className="flex-row content-between" style={{ fontWeight: 'bold' }}>
                     <div> <small style={{ color: '#d67a67' }} > POOR </small> </div>
@@ -99,7 +99,7 @@ const Home = () => {
     const PerformanceChart = () => (
         <div className={`home__block ${animate('fadeInDown')}`}>
             <strong> My Performance</strong>
-            <div className="mt-1"> <Chart width={620} /></div>
+            <div className="mt-2"> <Chart width={650} /></div>
         </div >
     )
 
@@ -123,7 +123,7 @@ const Home = () => {
     )
 
     const renderGoals = () => (
-        <div className="home__block mx-2 ml-3">
+        <div className="home__block home__goals">
             <div> <strong> My Goals </strong> </div>
             <div className="flex-row mt-1">{[3, 4, 4].map((g, index) => <GoalCard key={index.toString()} />)}</div>
         </div>
@@ -185,7 +185,7 @@ const Home = () => {
                 <Finance />
             </div>
 
-            <div className="home__performance flex-row">
+            <div className="home__performance ">
                 <PerformanceChart />
                 {renderGoals()}
             </div>
@@ -194,7 +194,7 @@ const Home = () => {
                 <NewsFeed />
 
                 <div className="home__block flex-row">
-                    <div className="home__news home__block-half mx-2">
+                    <div className="home__news home__block-half mx-3">
                         <h3> Top Comments </h3>
                         {comments.map((comment) => <Comment comment={comment} key={comment.id} />)}
                     </div>

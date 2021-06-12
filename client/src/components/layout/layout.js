@@ -61,7 +61,6 @@ const Layout = (props) => {
 
   return (
     <div className="layout">
-      <div className="layout__body">
 
         <div className="layout__navbar">
           <div className="layout__bg-layer">
@@ -95,7 +94,6 @@ const Layout = (props) => {
         <div className="layout__content">
             {children}
         </div>
-      </div>
 
     </div>
   );

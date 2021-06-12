@@ -1,11 +1,16 @@
 .page-container {
     &__body {
-        max-width: 1200px;
-        padding: 1.25rem 1.5rem;
-        padding-bottom: 3rem;
+        width: 1380px;
+        padding: 2rem 1rem 1rem 2.5rem;
+        height: auto;
+        overflow-x: hidden;
     }
 
     &__header {
         justify-content: space-between;
+    }
+
+    &__instructions {
+        flex-grow: 1;
     }
 }
