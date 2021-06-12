@@ -13,7 +13,7 @@ const Home = () => {
     const [comments, setComments] = useState([]);
     const [posts, setPosts] = useState([]);
     const [users, setUsers] = useState([]);
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
 
@@ -74,7 +74,7 @@ const Home = () => {
     const Stats = () => (
         <div className="home__block">
             <strong> Quick Stats </strong>
-            <div className="flex-row">
+            <div className="flex-row mt-2">
                 {totalStats.map(({ total, description }, index) =>
                     <Card
                         key={index.toString()}
